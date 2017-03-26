@@ -1,0 +1,5 @@
+:ui:
+  :interactive: {{ if isTrue .Env.INTERACTIVE }}true{{ else }}false{{ end }}
+
+:ssl:
+  :verify_ssl: {{ if isTrue .Env.VERIFY_SSL }}true{{ else }}false{{ end }}

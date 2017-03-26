@@ -1,0 +1,6 @@
+:foreman:
+  :enable_module: true
+  :host: {{ .Env.FOREMAN_HOST }}
+  :username: '{{ .Env.FOREMAN_USER }}'
+  :password: '{{ .Env.FOREMAN_PASS }}'
+  :use_sessions: false
